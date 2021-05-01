@@ -1,0 +1,20 @@
+.App {
+  .sidebar {
+    width: 16%;
+    height: 100vh;
+    position: fixed;
+    background-color: #1b1c25;
+    border-right: 1px solid #fff;
+  }
+  .main-content {
+    width: 84%;
+    margin-left: 16%;
+    background-image: url("../Images/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+  }
+}
