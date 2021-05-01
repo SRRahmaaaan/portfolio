@@ -1,6 +1,8 @@
-@import  "./Styles/layout";
-@import  "./Styles/navbar";
-@import  "./Styles/typography";
+@import "./Styles/layout";
+@import "./Styles/navbar";
+@import "./Styles/typography";
+@import "./Styles/title";
+@import "./Styles/about";
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +12,7 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: #ebecf1;
   font-size: 1.2rem;
+}
+span {
+  color: #206a5d;
 }

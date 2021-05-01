@@ -1,10 +1,13 @@
 import React from 'react'
+import Title from '../Components/Title'
+import DetailsSection from './DetailsSection'
 
 const About = () => {
     return (
-        <div>
-            <h1>This Is About Page</h1>
-        </div>
+        <section className="About">
+            <Title title={"About Me"} span={"About Me"} />
+            <DetailsSection />
+        </section>
     )
 }
 
