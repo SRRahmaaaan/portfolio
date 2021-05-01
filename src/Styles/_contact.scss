@@ -1,0 +1,75 @@
+.ContactPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .contact-sect {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.ContactItem {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 0.9rem;
+  }
+  .contact {
+    background-color: #1b1c25;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 0;
+    img {
+      width: 18%;
+      padding: 1rem;
+      border: 1px solid #333;
+      border-radius: 10px;
+      margin: 0 1.5rem;
+      filter: invert(2);
+    }
+    .right-items {
+      h6 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #206a5d;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+.title {
+  margin-bottom: 3rem;
+}
+.form-sect {
+  background-color: #1b1c25;
+  width: 97%;
+  padding: 1rem;
+  .form-box h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #206a5d;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    .form-control {
+      width: 100%;
+      height: 30px;
+      padding: 5px 20px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-size: 1.2rem;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
+.area {
+  height: 100px !important;
+  resize: none;
+}
+.submit-btn {
+  width: 100%;
+}
