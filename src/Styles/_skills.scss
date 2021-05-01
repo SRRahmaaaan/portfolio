@@ -1,0 +1,28 @@
+.SkillsSection {
+  margin-top: 1rem;
+  h4 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .know-container,
+  .familiar-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+.card {
+  height: 150px;
+  width: 150px;
+  background-color: #206a5d;
+  border-radius: 10px;
+  box-shadow: 5px 3px 9px inset rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 80px;
+  }
+}
