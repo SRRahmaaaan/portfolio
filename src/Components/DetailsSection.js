@@ -1,5 +1,6 @@
 import React from 'react'
 import aboutImage from "../Images/about.jpg"
+import Resume from "../files/Resume.pdf"
 
 const DetailsSection = () => {
     return (
@@ -12,7 +13,9 @@ const DetailsSection = () => {
                 <p>
                     I am Sydur Rahman. I am a progressive web developer. I started my journey as a developer couple of months now and I started enjoying this. I love coding and very passionate about my work. My favorite sports cricket and enjoying eating food like KACCI Biryani😋.
                 </p>
-                <button className="btn">Download CV</button>
+                <button className="btn">
+                    <a href={Resume} download="Resume.pdf">Download CV</a>
+                </button>
             </div>
         </div>
     )
