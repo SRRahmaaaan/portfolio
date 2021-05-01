@@ -1,14 +1,16 @@
 import React from 'react'
 import emailjs from "emailjs-com"
+import { useState } from 'react'
 
 const ContactForm = () => {
+    const [message, setMessage] = useState("")
     const sendEmail = (e) =>  {
         e.preventDefault();
         emailjs.sendForm('service_js79rgq', 'template_g0wlq3j', e.target, 'user_SabfjqIxsb0DCJ6951V7f')
             .then((result) => {
-                console.log(result.text);
+                setMessage("Thanks For Your Email")
             }, (error) => {
-                console.log(error.text);
+                setMessage("Something Went Wrong Email Didn't Send")
             });
         e.target.reset()
     }
@@ -30,6 +32,7 @@ const ContactForm = () => {
                 </div>
                 <button type="submit" className="btn submit-btn">Send</button>
             </form>
+            {message && <h5 className="status" style={{textAlign:"center"}}>{ message }</h5>}
         </div>
     )
 }
