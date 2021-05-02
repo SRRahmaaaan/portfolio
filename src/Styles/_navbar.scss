@@ -1,5 +1,6 @@
 .NavBar {
   height: 100vh;
+  animation: rightIn 2.5s ease-in forwards;
   .nav {
     height: 100%;
     display: flex;
@@ -11,9 +12,11 @@
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #fff;
     img {
       width: 70%;
+      height: 100%;
       border-radius: 20%;
       border: 5px solid #fff;
       margin-bottom: 1rem;
@@ -65,4 +68,15 @@
 }
 .active {
   background-color: #206a5d;
+}
+@keyframes rightIn {
+  0% {
+    transform: translateX(100%);
+  }
+  90%{
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

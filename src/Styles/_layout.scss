@@ -3,12 +3,14 @@
     width: 16%;
     height: 100vh;
     position: fixed;
+    right: 0;
     background-color: #1b1c25;
-    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
     z-index: 11;
+    animation: bottomIn 2s ease-in forwards;
     @media screen and (max-width: 1000px) {
-      transition: all 0.5s ease-in-out;
-      transform: translateX(-100%);
+      transition: all 1s ease-in-out;
+      right: -100%;
       width: 30%;
     }
     @media screen and (max-width: 411px) {
@@ -17,12 +19,13 @@
   }
   .nav-toggle {
     @media screen and (max-width: 1000px) {
-      transform: translateX(0);
+      right: 0;
+      transition: all 1s ease;
     }
   }
   .main-content {
     width: 84%;
-    margin-left: 16%;
+    margin-right: 16%;
     background-image: url("../Images/banner.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +33,7 @@
     min-height: 100vh;
     display: grid;
     position: relative;
+    animation: topIn 2s ease-in forwards;
     .content {
       margin: 5rem 15rem;
       @media screen and (max-width: 1000px) {
@@ -46,7 +50,7 @@
 .nav-btn {
   position: absolute;
   top: 10%;
-  right: 10%;
+  left: 10%;
   width: 4rem;
   height: 4rem;
   z-index: 10;
@@ -71,5 +75,21 @@
     .lines {
       display: block;
     }
+  }
+}
+@keyframes topIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bottomIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
