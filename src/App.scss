@@ -30,3 +30,8 @@ body::-webkit-scrollbar-track {
 span {
   color: #206a5d;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}

@@ -1,6 +1,10 @@
 .ContactPage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 580px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
   .contact-sect {
     display: flex;
     justify-content: space-between;
@@ -35,6 +39,9 @@
         font-size: 0.9rem;
       }
     }
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+  }
   }
 }
 .title {

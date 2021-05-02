@@ -13,14 +13,14 @@ const Contact = () => {
                 <Title title={"Contact Me"} span={"Contact Me"} />
             </div>
             <section className="ContactPage">
-            <div className="form-sect">
-                <ContactForm />
-            </div>
-            <div className="contact-sect">
-                <ContactItem icon={Phone} text={"+880 1609 274 946"} title={"Phone"}/>
-                <ContactItem icon={Email} text={"sydurrahman2699@gmail.com"} title={"Email"}/>
-                <ContactItem icon={Location} text={"Bason Sarak - Gazipur, Dhaka."} title={"Location"}/>
-            </div>
+                <div className="form-sect">
+                    <ContactForm />
+                </div>
+                <div className="contact-sect">
+                    <ContactItem icon={Phone} text={"+880 1609 274 946"} title={"Phone"}/>
+                    <ContactItem icon={Email} text={"sydurrahman2699@gmail.com"} title={"Email"}/>
+                    <ContactItem icon={Location} text={"Bason Sarak - Gazipur, Dhaka."} title={"Location"}/>
+                </div>
             </section>
         </>
     )
