@@ -16,9 +16,9 @@ const App = () => {
         <Navbar />
       </div>
       <div className="nav-btn" onClick={() => setToggle(!toggle)}>
-        <div className="lines" style={{backgroundColor: toggle&& "red"}}></div>
-        <div className="lines" style={{backgroundColor: toggle&& "red"}}></div>
-        <div className="lines" style={{backgroundColor: toggle&& "red"}}></div>
+        <div className="lines" style={{backgroundColor: toggle && "red"}}></div>
+        <div className="lines" style={{backgroundColor: toggle && "red"}}></div>
+        <div className="lines" style={{backgroundColor: toggle && "red"}}></div>
       </div>
       <div className="main-content">
         <div className="content">
