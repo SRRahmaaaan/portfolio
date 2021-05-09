@@ -3,6 +3,7 @@ import ProjectCard from '../Components/ProjectCard'
 import Title from "../Components/Title"
 import Teachcom from "../Images/techcom.PNG"
 import Foodbazar from "../Images/foodbazar.png"
+import PremierLeague from "../Images/premier.png"
 import Vanue from "../Images/venue.png"
 
 const Projects = () => {
@@ -25,6 +26,12 @@ const Projects = () => {
                     live={"https://food-bazar-b4116.web.app/"} 
                     frontCode={"https://github.com/SRRahmaaaan/food-bazar-front-end"} 
                     backCode={"https://github.com/SRRahmaaaan/food-bazar-back-end"} 
+                />
+                <ProjectCard 
+                    pic={PremierLeague} 
+                    name={"English Premier League"}
+                    live={"https://premier-leagueee.netlify.app/"} 
+                    frontCode={"https://github.com/SRRahmaaaan/english-premier-league"} 
                 />
                 <ProjectCard 
                     pic={Vanue} 
